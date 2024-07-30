@@ -166,6 +166,12 @@ body {
   body.light-mode header p {
     color: #ffffff;
   }
+  body.light-mode #about h2,
+  body.light-mode #experience h3,
+  body.light-mode #education h3{
+    color: #1a1a1a;
+  }
+  
   body.light-mode #about,
   body.light-mode #skills,
   body.light-mode #experience,
