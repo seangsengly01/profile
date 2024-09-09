@@ -12,7 +12,8 @@ body {
   font-family: 'JetBrains Mono', monospace;
   background-color: var(--background-color);
   color: var(--text-color);
-  margin: 0;
+  margin-left: 50px;
+  margin-right: 50px;
   padding: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
