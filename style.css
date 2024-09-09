@@ -1,232 +1,120 @@
+/* General Styles */
 body {
-    background-color: #333333;
-    color: #f3f6f8;
-    font-family: 'JetBrains Mono', monospace;
-    line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  /* Style the Header */
-  header {
-    background-color: #1a1a1a;
-    text-align: center;
-    padding: 4% 2%;
-    border-bottom: 1px solid #444444;
-    position: relative;
-    transition: transform 0.5s;
-  }
-  header:hover{
-    transform: translateY(-10px);
-  }
-  header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s;
-  }
-  header img:hover{
-    transform: translateY(-10px);
-  }
-  header h1 {
-    font-size: 2.5em;
-    color: #ffffff;
-    margin: 0.2em 0;
-  }
-  header p {
-    font-size: 1.2em;
-    color: #cccccc;
-  }
-  #dark-mode-toggle {
-    background: none;
-    border: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-  }
-  #dark-mode-icon {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s;
-  }
-  
-  /* Style the About Section */
-  #about {
-    padding: 40px;
-    background-color: #444444;
-    color: #f3f6f8;
-    border: 1px solid #666666;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    transition: transform 0.5s;
-  }
-  #about:hover{
-    transform: translateY(-10px);
-  }
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
 
-  #about h2 {
-    color: #d1ecff;
-    margin-bottom: 10px;
-  }
-  
-  /* Enhance the Skills Section */
-  #skills {
-    background-color: #555555;
-    padding: 40px;
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s;
-  }
-  #skills:hover{
-    transform: translateY(-10px);
-  }
-  #skills ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #skills li {
-    padding: 10px 15px;
-    margin: 5px;
-    background-color: #666666;
-    color: #d1ecff;
-    border: 1px solid #777777;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s;
-  }
+h1, h2, h3 {
+  color: #ffdd57;
+  line-height: 1.2;
+}
 
-  #skills li:hover{
-    transform: translateY(-5px);
-  }
-  
-  /* Professionalize the Experience Section */
-  #experience {
-    padding: 40px;
-    background-color: #444444;
-    border: 1px solid #666666;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    transition: transform 0.5s;
-  }
-  #experience:hover{
-    transform: translateY(-10px);
-  }
-  #experience article {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #666666;
-    transition: transform 0.6s;
-  }
-  #experience article:hover{
-    transform: translateY(-8px);
-  }
-  #experience h3 {
-    color: #d1ecff;
-    margin-bottom: 5px;
-  }
-  #experience p {
-    margin: 5px 0;
-  }
-  
-  /* Style the Education Section */
-  #education {
-    padding: 40px;
-    background-color: #444444;
-    border: 1px solid #666666;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    transition: transform 0.5s;
-  }
-  #education:hover{
-    transform: translateY(-10px);
-  }
-  #education article {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #666666;
-    transition: transform 0.5s;
-  }
-  #education article:hover{
-    transform: translateY(-5px);
-  }
-  #education h3 {
-    color: #d1ecff;
-    margin-bottom: 5px;
-  }
-  #education p {
-    margin: 5px 0;
-  }
-  
-  /* Style the Contact Section */
-  footer {
-    background-color: #1a1a1a;
-    text-align: center;
-    padding: 20px;
-    color: #cccccc;
-    border-top: 1px solid #444444;
-    border-radius: 0 0 10px 10px;
-    margin-top: 20px;
-  }
-  footer a {
-    color: #d1ecff;
-    text-decoration: none;
-  }
-  footer a:hover {
-    text-decoration: underline;
-  }
-  footer p {
-    margin: 10px 0;
-  }
-  
-  /* Light Mode Styles */
-  body.light-mode {
-    background-color: #f3f6f8;
-    color: #333333;
-  }
-  body.light-mode header {
-    background-color: #0077b5;
-    border-bottom: 1px solid #005582;
-  }
-  body.light-mode header h1,
-  body.light-mode header p {
-    color: #ffffff;
-  }
-  body.light-mode #about h2,
-  body.light-mode #experience h3,
-  body.light-mode #education h3{
-    color: #1a1a1a;
-  }
-  
-  body.light-mode #about,
-  body.light-mode #skills,
-  body.light-mode #experience,
-  body.light-mode #education {
-    background-color: #ffffff;
-    border: 1px solid #d1d1d1;
-    color: #333333;
-  }
-  body.light-mode #skills li {
-    background-color: #ffffff;
-    color: #0077b5;
-  }
-  body.light-mode footer {
-    background-color: #0077b5;
-    border-top: 1px solid #005582;
-  }
-  body.light-mode footer a {
-    color: #ffffff;
-  }
-  
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: #ffdd57;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+img.responsive {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-bottom: 2px solid #ffdd57;
+}
+
+#dark-mode-toggle {
+  background: #2b2b2b;
+  border: 2px solid #ffdd57;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#dark-mode-toggle:hover {
+  background: #ffdd57;
+  color: #121212;
+}
+
+#dark-mode-icon {
+  width: 24px;
+  height: 24px;
+}
+
+section {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 30px;
+  background-color: #2b2b2b; /* Lighter than #1e1e1e */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  border-bottom: 2px solid #ffdd57;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #2b2b2b;
+  border-top: 2px solid #ffdd57;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Dark Mode Specific Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+.dark-mode section {
+  background-color: #2b2b2b;
+}
+
+.dark-mode footer {
+  background-color: #2b2b2b;
+}
