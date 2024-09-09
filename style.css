@@ -5,13 +5,10 @@ body {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  line-height: 1.6;
 }
 
 h1, h2, h3 {
   color: #ffdd57;
-  line-height: 1.2;
 }
 
 ul {
@@ -22,38 +19,30 @@ ul {
 a {
   color: #ffdd57;
   text-decoration: none;
-  font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #ffd700;
 }
 
 img.responsive {
-  max-width: 150px;
+  max-width: 100px;
   height: auto;
   border-radius: 50%;
 }
 
 header {
   text-align: center;
-  padding: 30px;
+  padding: 15px;
   background-color: #1e1e1e;
   border-bottom: 2px solid #ffdd57;
 }
 
 #dark-mode-toggle {
-  background: #2b2b2b;
-  border: 2px solid #ffdd57;
+  background: none;
+  border: none;
   cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-#dark-mode-toggle:hover {
-  background: #ffdd57;
-  color: #121212;
+  padding: 10px;
 }
 
 #dark-mode-icon {
@@ -63,42 +52,99 @@ header {
 
 section {
   margin: 20px auto;
-  max-width: 800px;
-  padding: 30px;
-  background-color: #2b2b2b; /* Lighter than #1e1e1e */
+  max-width: 90%;
+  padding: 15px;
+  background-color: #1e1e1e;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
   border-bottom: 2px solid #ffdd57;
   padding-bottom: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 ul li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 article {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 footer {
   text-align: center;
-  padding: 30px;
-  background-color: #2b2b2b;
+  padding: 15px;
+  background-color: #1e1e1e;
   border-top: 2px solid #ffdd57;
 }
 
 footer p {
-  margin: 10px 0;
-  font-size: 16px;
+  margin: 5px 0;
 }
 
 footer a:hover {
   text-decoration: underline;
-  color: #ffd700;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  img.responsive {
+    max-width: 80px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  img.responsive {
+    max-width: 60px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  header, footer {
+    padding: 8px;
+  }
+
+  section {
+    margin: 10px auto;
+    padding: 8px;
+  }
+
+  ul li {
+    font-size: 0.85rem;
+  }
 }
 
 /* Dark Mode Specific Styles */
@@ -112,9 +158,9 @@ footer a:hover {
 }
 
 .dark-mode section {
-  background-color: #2b2b2b;
+  background-color: #1e1e1e;
 }
 
 .dark-mode footer {
-  background-color: #2b2b2b;
+  background-color: #1e1e1e;
 }
